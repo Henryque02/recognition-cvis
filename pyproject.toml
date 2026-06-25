@@ -1,0 +1,22 @@
+[project]
+name = "recognition-cvis"
+version = "0.1.0"
+description = "TECA2 Atividade 4 — Reconhecimento de padrões em cenas de inspeção (UFG 2026/1)"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "opencv-python-headless>=4.10",
+    "matplotlib>=3.8",
+    "scipy>=1.11",
+    "opencv-python>=4.13.0.92",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.0",
+    "nbconvert>=7.16",
+    "ipykernel>=6.29",
+]
+
+[tool.setuptools]
+packages = ["src"]
