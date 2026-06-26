@@ -2302,6 +2302,46 @@ wheels = [
 ]
 
 [[package]]
+name = "recognition-cvis"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "matplotlib", version = "3.10.9", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "matplotlib", version = "3.11.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
+    { name = "numpy", version = "2.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
+    { name = "opencv-python" },
+    { name = "opencv-python-headless" },
+    { name = "scipy", version = "1.15.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
+    { name = "scipy", version = "1.18.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+    { name = "jupyter" },
+    { name = "nbconvert" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "matplotlib", specifier = ">=3.8" },
+    { name = "numpy", specifier = ">=1.26" },
+    { name = "opencv-python", specifier = ">=4.13.0.92" },
+    { name = "opencv-python-headless", specifier = ">=4.10" },
+    { name = "scipy", specifier = ">=1.11" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "ipykernel", specifier = ">=6.29" },
+    { name = "jupyter", specifier = ">=1.0" },
+    { name = "nbconvert", specifier = ">=7.16" },
+]
+
+[[package]]
 name = "referencing"
 version = "0.37.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2858,46 +2898,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/28/e3/55dcc2cfbc3ca9c29519eb6884dd1415ecb53b0e934862d3559ddcb7e20b/stack_data-0.6.3.tar.gz", hash = "sha256:836a778de4fec4dcd1dcd89ed8abff8a221f58308462e1c4aa2a3cf30148f0b9", size = 44707, upload-time = "2023-09-30T13:58:05.479Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f1/7b/ce1eafaf1a76852e2ec9b22edecf1daa58175c090266e9f6c64afcd81d91/stack_data-0.6.3-py3-none-any.whl", hash = "sha256:d5558e0c25a4cb0853cddad3d77da9891a08cb85dd9f9f91b9f8cd66e511e695", size = 24521, upload-time = "2023-09-30T13:58:03.53Z" },
-]
-
-[[package]]
-name = "teca2-atividade4"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "matplotlib", version = "3.10.9", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "matplotlib", version = "3.11.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
-    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
-    { name = "numpy", version = "2.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
-    { name = "opencv-python" },
-    { name = "opencv-python-headless" },
-    { name = "scipy", version = "1.15.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
-    { name = "scipy", version = "1.18.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ipykernel" },
-    { name = "jupyter" },
-    { name = "nbconvert" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "matplotlib", specifier = ">=3.8" },
-    { name = "numpy", specifier = ">=1.26" },
-    { name = "opencv-python", specifier = ">=4.13.0.92" },
-    { name = "opencv-python-headless", specifier = ">=4.10" },
-    { name = "scipy", specifier = ">=1.11" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "ipykernel", specifier = ">=6.29" },
-    { name = "jupyter", specifier = ">=1.0" },
-    { name = "nbconvert", specifier = ">=7.16" },
 ]
 
 [[package]]
